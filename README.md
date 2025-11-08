@@ -8,13 +8,17 @@ This repository is a collection of Python command-line utilities for everyday ta
 
 **[GuessingGame.py](tools/GuessingGame.py)** — An interactive number guessing game with customizable difficulty (range and attempt limits). Includes play-again functionality and colorful terminal feedback.
 
+**[HashTool.py](tools/HashTool.py)** — A comprehensive cryptographic hash generator and cracker supporting multiple algorithms (MD5, SHA family, SHA3, BLAKE2, etc.). Features intelligent algorithm detection, dictionary attacks with multiprocessing, brute force capabilities, and a rich terminal interface with progress tracking.
+
 ## Technical Highlights
 
 - **Cryptographic security**: Uses [`secrets`](https://docs.python.org/3/library/secrets.html) module for password generation rather than `random`, ensuring passwords are suitable for security-sensitive applications
 - **Dual-mode interfaces**: Tools detect whether to run in interactive or CLI mode based on argument presence
-- **Rich terminal output**: Leverages [Rich](https://rich.readthedocs.io/) for formatted prompts and styled console output
+- **Rich terminal output**: Leverages [Rich](https://rich.readthedocs.io/) for formatted prompts, styled console output, progress bars, and tables
 - **Type annotations**: Functions use Python type hints for clearer interfaces
-- **Graceful interruption handling**: Both tools catch `KeyboardInterrupt` and `EOFError` for clean exits
+- **Graceful interruption handling**: All tools catch `KeyboardInterrupt` and `EOFError` for clean exits
+- **Performance optimization**: HashTool uses multiprocessing for parallel hash verification, significantly speeding up dictionary attacks
+- **Intelligent algorithm detection**: HashTool can automatically detect hash algorithms based on length and pattern analysis
 
 ## Dependencies
 
