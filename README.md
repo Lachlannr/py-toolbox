@@ -8,7 +8,7 @@ This repository is a collection of Python command-line utilities for everyday ta
 
 **[GuessingGame.py](tools/GuessingGame.py)** — An interactive number guessing game with customizable difficulty (range and attempt limits). Includes play-again functionality and colorful terminal feedback.
 
-**[HashTool.py](tools/HashTool.py)** — A comprehensive cryptographic hash generator and cracker supporting multiple algorithms (MD5, SHA family, SHA3, BLAKE2, etc.). Features intelligent algorithm detection, dictionary attacks with multiprocessing, brute force capabilities, and a rich terminal interface with progress tracking.
+**[HashTool.py](tools/HashTool.py)** — A comprehensive cryptographic hash generator and cracker supporting multiple algorithms (MD5, SHA family, SHA3, BLAKE2, etc.). Features intelligent algorithm detection, dictionary attacks with multiprocessing, brute force capabilities, and a rich terminal interface with progress tracking. For dictionary attacks, wordlists can be found at [weakpass.com/wordlists](https://weakpass.com/wordlists) or you can use online hash lookup services like [hashes.com](https://hashes.com/en/decrypt/hash).
 
 ## Technical Highlights
 
